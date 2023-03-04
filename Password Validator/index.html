@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+
+    <!-- CSS -->
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            width: 500px;
+            box-shadow: 2px 2px 2px 2px gray;
+            padding: 10px 20px;
+
+        }
+        h1{
+            text-align: center;
+            
+        }
+        label{
+            margin: 5px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        input{
+            font-size: 15px;
+            padding: 5px;
+        }
+
+        #submit{
+            margin:auto;
+            margin-top: 30px;
+            width: 100px;
+            border-radius: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 2px 2px 2px 2px gray;
+            
+        }
+        span{
+            color: rgb(113, 12, 196);
+            
+        }
+    </style>
+</head>
+<body>
+ <form> 
+    <div class="main">
+         <h1>Password</h1>
+      
+        <label for="pass">Password</label>
+        <input type="password" placeholder=" password" id="pass"  required maxlength="8">
+        <span id="message"> </span>
+
+        <label for="re-pass">Confirmed Password</label>
+        <input type="password" placeholder="Confirmed Password" id="re-pass"  required>
+        <span id="message2"></span>
+
+        <button type = "submit" onclick="matchPassword()" id="submit">Log In</button>  
+   
+    </div>
+</form>
+
+    <!-- javaScript -->
+
+    <script src="./javaScript.js">
+
+    </script>
+
+</body>
+</html>
