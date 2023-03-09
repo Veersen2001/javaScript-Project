@@ -5,9 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color-Mixer</title>
+    <!-- style -->
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-shadow: 0px 0px 2px 2px #808080;
+            height: 300px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- html -->
+    <div class="main">
+        <label for="color1">Color1</label>
+        <input type="text" id="color1" placeholder="First Color">
+
+        <label for="color2">Color2</label>
+        <input type="text" id="color2" placeholder="Second Color">
+
+        <label for="result">Resulting Color</label>
+        <input type="text" readonly id="result" placeholder=" resulting color">
+
+        <button onclick="color_mix()">Result</button>
+
+    </div>
+    <!-- javaScript -->
+    <script src="./script.js">
+
+    </script>
+       
     
 </body>
 </html>

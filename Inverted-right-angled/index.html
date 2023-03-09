@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverted-right-angled</title>
+
+    <style>
+        .main{
+            border: 2px solid gray;
+            height: 300px;
+            width: 300px;
+            
+        }
+        span{
+            height: 200px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <input type="number" placeholder="Enter the numer" id="number">
+
+        <button onclick="pattern()">Prints</button>
+        <span id="span"></span>
+     
+   
+    </div>
+
+     <script>
+        function pattern()
+        {
+         let input = document.getElementById('number').value;
+         let span = document.getElementById('span');
+
+            for(i=input; i>=1; i--)
+            {
+                document.write('<br>')
+
+                for(let j=i; j>=1; j--)
+                {
+                    
+                   span.innerText='*';
+                   document.body.appendChild(span);
+
+                }
+                 
+            }
+        }    
+     </script>
+</body>
+</html>
