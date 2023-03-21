@@ -13,13 +13,44 @@
             justify-content: center;
             height: 100vh;
         }
+        label{
+            font-weight: 500;
+            font-size: 16px;
+        }
         .main{
             display: flex;
             flex-direction: column;
             padding: 10px;
             box-shadow: 0px 0px 2px 2px #808080;
+            height: 400px;
+            width: 300px;
+            gap: 6px ;
+            border-radius: 5px;
+        }
+
+        #result-btn{
+          border-radius: 10px;
+          background-color: #fff;
+          box-shadow: 0px 0px 1px 1px #808080;
+          border: none;
+          background-color: #9524a6;
+          font-size: 20px;
+          margin: 15px 20px;
+          padding: 10px 10px;
+
+        }
+        #result{
+            font-size: 20px;
+            border: 
+            margin-top: 10px;
+            color: #fff;
+            text-align: center;
             height: 300px;
-            width: 200px;
+            
+           
+        }
+        input{
+            padding: 5px 10px;
         }
     </style>
 </head>
@@ -32,10 +63,10 @@
         <label for="color2">Color2</label>
         <input type="text" id="color2" placeholder="Second Color">
 
+        <button onclick="mixColors()" id="result-btn">Result</button>
+
         <label for="result">Resulting Color</label>
         <input type="text" readonly id="result" placeholder=" resulting color">
-
-        <button onclick="color_mix()">Result</button>
 
     </div>
     <!-- javaScript -->
