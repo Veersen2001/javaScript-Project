@@ -1,26 +1,17 @@
-
-// make object of items
-
-const items = {
-
-    'sugar':2.50,
-    'salt':1.50,
-    'rice':4.50,
-    'Lentils':5.0
-    
+const store = {
+  item1: 10,
+  item2: 20,
+  item3: 30,
+  item:50,
 };
 
-    const change = new Map(items);
-    
+const exchangeRate = 80;
 
+const convertedStore = Object.entries(store).map(([item, price]) => {
+  return [item, price * exchangeRate];
+});
+console.log(convertedStore); // array
 
-// const exchangeRate = 80;
+const convertedInRupees = Object.entries(convertedStore);
 
-// const convertedItems = Object.fromEntries(
-//   Object.entries(items).map(([item, price]) => [item, price * exchangeRate])
-// );
-
-// console.log(convertedItems);
-
-
-
+console.log(convertedInRupees);
